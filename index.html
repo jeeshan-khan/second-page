@@ -1,23 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <div class="main">
-        <div class="mainTop">
-            <h1 id="mainText">
-                Lorem ipsum dolor.
-            </h1>
+      <div class="mainTop">
+        <h1 id="mainText">Lorem ipsum dolor.</h1>
+      </div>
+      <div class="mainBottom">
+        <div>
+          <img
+            onclick="clicked(1)"
+            class="img1"
+            src="https://images.pexels.com/photos/18844139/pexels-photo-18844139/free-photo-of-coffee-shop-kitchen-50-six-in-llandudno.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt=""
+          />
+          <h1>CLICK</h1>
         </div>
-        <div class="mainBottom">
-            <img id="img1"src="https://images.pexels.com/photos/18844139/pexels-photo-18844139/free-photo-of-coffee-shop-kitchen-50-six-in-llandudno.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
-            <img id="img2" src="https://images.pexels.com/photos/18844139/pexels-photo-18844139/free-photo-of-coffee-shop-kitchen-50-six-in-llandudno.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+
+        <div>
+          <img
+            onclick="clicked(2)"
+            class="img2"
+            src="https://images.pexels.com/photos/10897817/pexels-photo-10897817.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            alt=""
+          />
+          <h1>CLICK</h1>
         </div>
+      </div>
+      <div class="img1Hover">
+        <button class="img1Close" onclick="closeDiv()">Close</button>
+        <div class="hoverDiv1">
+          <img
+            src="https://images.pexels.com/photos/10897817/pexels-photo-10897817.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            alt=""
+          />
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Consequuntur, quos perferendis. Ducimus minus ullam dicta? Itaque,
+            quaerat. Ratione repellat molestiae nihil iste nesciunt facere totam
+            ipsum, voluptatem eum magnam consectetur vero expedita nulla harum
+            consequatur quos. Minima praesentium vel vitae optio inventore?
+            Praesentium alias, molestias aspernatur, ipsum amet reprehenderit,
+            aut ipsa dolores facere hic similique! Animi, perferendis ipsa.
+            Excepturi, eligendi. Lorem ipsum, dolor sit amet consectetur
+            adipisicing elit. Consequuntur, quos perferendis. Ducimus minus
+            ullam dicta? Itaque, quaerat. Ratione repellat molestiae nihil iste
+            nesciunt facere totam ipsum, voluptatem eum magnam consectetur vero
+            expedita nulla harum consequatur quos. Minima praesentium vel vitae
+            optio inventore? Praesentium alias, molestias aspernatur, ipsum amet
+            reprehenderit, aut ipsa dolores facere hic similique! Animi,
+            perferendis ipsa. Excepturi, eligendi. Excepturi, eligendi. Lorem
+            ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur,
+            quos perferendis. Ducimus minus ullam dicta? Itaque, quaerat.
+            Ratione repellat molestiae nihil iste nesciunt facere totam ipsum,
+            voluptatem eum magnam consectetur vero expedita nulla harum
+            consequatur quos. Minima praesentium vel vitae optio inventore?
+            Praesentium alias, molestias aspernatur, ipsum amet reprehenderit,
+            aut ipsa dolores facere hic similique! Animi, perferendis ipsa.
+            Excepturi, eligendi.
+          </p>
+        </div>
+      </div>
     </div>
+
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
