@@ -13,18 +13,35 @@
     gap: 100px;
     height: 100vh;
     background-color: #ffc8dd;
-    
 }
-
-    
-
 img
 {
+    height: 300px;
     width: 200px;
-
 }
 .mainBottom{
     display: flex;
     justify-content: center;
     gap: 50px;
+}
+.mainBottom img{
+    padding: 10px;
+    background-color: #ffafcc;
+    border-radius: 5px;
+    filter: grayscale();    
+    transition: transform 1s ease;
+}
+#img1{
+    transform: rotate(-30deg);
+}
+#img2{
+    transform: rotate(+30deg);
+}
+#img1:hover{
+    transform: scale(1.4) rotate(0);
+    filter: grayscale(0);
+}
+#img2:hover{
+    transform: scale(1.4) rotate(0);
+    filter: grayscale(0);
 }
