@@ -29,7 +29,7 @@ let clicked = (imgNum) => {
     currentPara = img2Para;
     currentImg = img2Src;
   }
-  console.log(currentImg);
+  // console.log(currentImg);
   displayImg.setAttribute("src", currentImg);
   imgReveal.style.display = "block";
   displayPara.innerHTML = currentPara;

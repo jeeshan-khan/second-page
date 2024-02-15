@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&family=Poppins:wght@700&family=Tangerine:wght@400;700&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -16,7 +17,9 @@
     background-color: rgb(111, 28, 87);
 }
 
-
+body{
+    position: relative;
+}
 .main{
     padding: 50px;
     display: flex;
@@ -26,9 +29,11 @@
     width: 100%;
     gap: 100px;
     height: 100vh;
-    background-color: #ffc8dd;
+    z-index: 100;
+    background-color: transparent;
     position: relative;   
 }
+
 
 
 
@@ -71,9 +76,11 @@
 
 .img1{
     transform: rotate(-30deg);
+    z-index:30;
 }
 
 .img2{
+    z-index: 30;
     transform: rotate(30deg);
 }
 
@@ -94,7 +101,7 @@
     visibility: visible;
     transform: translate(-50%, -50%);
     color: #fff;
-    z-index: 12;
+    z-index: 10;
 }
 .img2:hover~ h1{
     /* position: absolute; */
@@ -161,12 +168,67 @@
 }
 
  .img1Hover>div>p{
+    font-weight: 400;
+    font-family: 'Tangerine', cursive;
     flex-basis: 70%;
-    font-size: 20px;
+    font-size: 35px;
     color: #073a5c;
     background-color: #ffc8dd;
-    height:90%;
+    height:70vh;
     overflow-y: scroll;
     padding: 20px;
     border-radius: 20px;
 } 
+
+
+  
+  .center {
+    position: relative;
+    display: flex;
+    justify-content:first baseline;
+    flex-direction: column;
+    gap: 50px;
+    
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+  }
+  
+  .table {
+    width: 790px;
+    height: 150px;
+    background-color: #d4e5ff;
+  }
+  .table .monitor-wrapper {
+    background: #050321;
+    width: 770px;
+    height: 130px;
+    box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.3);
+  }
+  .table .monitor-wrapper .monitor {
+    width: 700px;
+    height: 100px;
+    background-color: #344151;
+    overflow: hidden;
+    white-space: nowrap;
+    box-shadow: inset 0px 5px 10px 2px rgba(0, 0, 0, 0.3);
+  }
+  .table .monitor-wrapper .monitor p {
+    font-family: "VT323", monospace;
+    font-size: 100px;
+    position: relative;
+    display: inline-block;
+    animation: move 20s infinite linear;
+    color: #EBB55F;
+  }
+  
+  @keyframes move {
+    from {
+      left: 800px;
+    }
+    to {
+      left: -4800px;
+    }
+  }
