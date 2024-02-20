@@ -36,11 +36,11 @@ body{
 
 
 
-
-
     
 
 .mainBottom{
+    position: relative;
+    top: 40px;
     display: flex;
     justify-content: center;
     gap: 50px;
@@ -66,9 +66,10 @@ body{
 .mainBottom>div>img{
     width: 200px;
     padding: 10px;
-    background-color:#ffafcc ;
+    background-color:#ebb0c6 ;
     border-radius: 5px;
     filter: grayscale(1);
+    
     transition: transform 1s ease;
     cursor: pointer;
 }
@@ -87,11 +88,13 @@ body{
 .img1:hover{
     transform:scale(1.1) rotate(0);
     filter: grayscale(0);
+    background-color: #D63484;
 }
 
 .img2:hover{
     transform: scale(1.1) rotate(0);
     filter: grayscale(0);
+    background-color: #D63484;
 }
 
 .img1:hover~ h1{
@@ -195,33 +198,60 @@ body{
     bottom: 0;
     margin: auto;
   }
+ 
+
+  .title-word {
+    animation: color-animation 4s linear infinite;
+  }
   
-  .table {
-    width: 790px;
-    height: 150px;
-    background-color: #d4e5ff;
+  .title-word-1 {
+    --color-1: #DF8453;
+    --color-2: #3D8DAE;
+    --color-3: #E4A9A8;
   }
-  .table .monitor-wrapper {
-    background: #050321;
-    width: 770px;
-    height: 130px;
-    box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.3);
+  
+  .title-word-2 {
+    --color-1: #DBAD4A;
+    --color-2: #ACCFCB;
+    --color-3: #17494D;
   }
-  .table .monitor-wrapper .monitor {
-    width: 700px;
+  
+  .title-word-3 {
+    --color-1: #ACCFCB;
+    --color-2: #E4A9A8;
+    --color-3: #ACCFCB;
+  }
+  
+  .title-word-4 {
+    --color-1: #3D8DAE;
+    --color-2: #DF8453;
+    --color-3: #E4A9A8;
+  }
+  
+  @keyframes color-animation {
+    0%    {color: var(--color-1)}
+    32%   {color: var(--color-1)}
+    33%   {color: var(--color-2)}
+    65%   {color: var(--color-2)}
+    66%   {color: var(--color-3)}
+    99%   {color: var(--color-3)}
+    100%  {color: var(--color-1)}
+  }
+  
+  /* Here are just some visual styles. 🖌 */
+  
+  .container {
+    display: grid;
+    place-items: center;  
+    text-align: center;
     height: 100px;
-    background-color: #344151;
-    overflow: hidden;
-    white-space: nowrap;
-    box-shadow: inset 0px 5px 10px 2px rgba(0, 0, 0, 0.3);
   }
-  .table .monitor-wrapper .monitor p {
-    font-family: "VT323", monospace;
-    font-size: 100px;
-    position: relative;
-    display: inline-block;
-    animation: move 20s infinite linear;
-    color: #EBB55F;
+  
+  .title {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    font-size: 60px;
+    text-transform: uppercase;
   }
   
   @keyframes move {
@@ -229,6 +259,6 @@ body{
       left: 800px;
     }
     to {
-      left: -4800px;
+      left: -800px;
     }
   }
